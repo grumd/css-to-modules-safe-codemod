@@ -1,30 +1,39 @@
 {
-  "name": "styled-components-codemods",
+  "name": "css-to-modules-safe-codemod",
   "version": "1.1.0",
-  "description": "Automatic codemods to upgrade your styled-components code to newer versions.",
-  "repository": "https://github.com/styled-components/styled-components-codemods",
+  "description": "Automatic codemods to upgrade from CSS/SCSS to CSS-Modules safely.",
   "license": "MIT",
-  "author": "https://github.com/RIP21/",
-  "bin": "./bin/styled-components-codemods.js",
+  "author": "https://github.com/grumd/",
+  "bin": "./bin/index.js",
   "keywords": [
     "babel-plugin",
-    "styled-components",
+    "babel-codemod",
+    "css-codemod",
+    "css-modules",
+    "css",
+    "scss",
     "codemod"
   ],
   "peerDependencies": {
-    "babel-core": "^6.26.0"
+    "@babel/core": "^7.11.0",
+    "postcss": "^8.0.0"
   },
   "devDependencies": {
-    "babel-plugin-tester": "^5.0.0",
-    "jest": "^22.4.2",
-    "prettier": "^1.14.2"
+    "babel-plugin-tester": "^10.1.0",
+    "jest": "^28.1.2",
+    "prettier": "^2.7.1"
   },
   "dependencies": {
-    "babel-codemod": "^2.0.6",
-    "babel-core": "^6.26.3",
-    "commander": "^2.18.0",
-    "fast-glob": "^2.2.3",
-    "lodash": "^4.17.10"
+    "@babel/core": "^7.11.0",
+    "ast-types": "^0.15.2",
+    "babel-codemod": "^2.1.2",
+    "commander": "^9.3.0",
+    "fast-glob": "^3.2.11",
+    "lodash": "^4.17.21",
+    "postcss": "^8.0.0",
+    "postcss-scss": "^4.0.4",
+    "postcss-selector-parser": "^6.0.10",
+    "recast": "^0.21.1"
   },
   "scripts": {
     "test": "jest"
