@@ -1,0 +1,31 @@
+@import 'something';
+
+$color: red;
+
+.testClassName {
+  color: $color;
+
+  .testClassNameChild {
+    color: red;
+  }
+
+  :global(.other-class-name) {
+    color: red;
+  }
+
+  &:global(.variety) {
+    color: red;
+  }
+
+  > :global(.something) {
+    color: red;
+  }
+
+  > :global(.foo)::after {
+    color: red;
+  }
+
+  > :global(.foo)::before, > :global(.bar)::before {
+    color: red;
+  }
+}

@@ -1,0 +1,7 @@
+.testClassName {
+  color: red;
+}
+
+:global(.unused-class-name) {
+  color: green;
+}

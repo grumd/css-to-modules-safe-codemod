@@ -1,0 +1,5 @@
+{
+  "css": "./*.css",
+  "js": "./*.js",
+  "testTitle": "CSS import statement is absent, it should add one anyway"
+}

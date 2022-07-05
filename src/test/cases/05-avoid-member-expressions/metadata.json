@@ -1,0 +1,5 @@
+{
+  "css": "./*.css",
+  "js": "./*.js",
+  "testTitle": "Avoid member expressions like object['className']"
+}

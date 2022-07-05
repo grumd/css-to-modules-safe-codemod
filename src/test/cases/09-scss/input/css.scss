@@ -1,0 +1,31 @@
+@import 'something';
+
+$color: red;
+
+.test-class-name {
+  color: $color;
+
+  .test-class-name-child {
+    color: red;
+  }
+
+  .other-class-name {
+    color: red;
+  }
+
+  &.variety {
+    color: red;
+  }
+
+  > .something {
+    color: red;
+  }
+
+  > .foo::after {
+    color: red;
+  }
+
+  > .foo::before, > .bar::before {
+    color: red;
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "css": "./*.css",
+  "js": "./*.js",
+  "testTitle": "Transforming multi-class strings into template literals"
+}

@@ -1,0 +1,5 @@
+{
+  "css": "./*.scss",
+  "js": "./*.js",
+  "testTitle": "Can parse scss"
+}

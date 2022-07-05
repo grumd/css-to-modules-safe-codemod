@@ -1,0 +1,5 @@
+{
+  "css": "./*.css",
+  "js": "./*.js",
+  "testTitle": "Simple case with one css and js file"
+}

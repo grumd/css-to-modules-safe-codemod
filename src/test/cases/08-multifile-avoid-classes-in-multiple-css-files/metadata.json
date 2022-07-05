@@ -1,0 +1,5 @@
+{
+  "css": "./*.css",
+  "js": "./*.js",
+  "testTitle": "Do not convert classes that are used in multiple css files"
+}
