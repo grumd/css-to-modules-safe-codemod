@@ -181,10 +181,8 @@ const walkAst = ({
             selectorAst.walkClasses((classSelector) => {
               if (classSelector.value === word) {
                 const cls = classes[word];
-                // console.log(cls);
                 const newWord = camelCase(word);
-                // const newSelector = hasChildrenSelectors ? `${newWord} :global` : newWord;
-                classSelector.setPropertyWithoutEscape('value', newWord);
+                classSelector.value = newWord;
                 cls.newClassName = newWord;
 
                 if (!convertedCssFiles[file.filePath]) {
@@ -454,7 +452,6 @@ const walkAst = ({
             const name = classSelector.value;
             const cls = classes[name];
             if (cls && !cls.newClassName) {
-              console.log(name);
               selector = selector.replace(`.${name}`, `:global(.${name})`);
             }
           });

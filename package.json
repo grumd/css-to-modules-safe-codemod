@@ -44,7 +44,8 @@
   "scripts": {
     "test": "jest",
     "watch": "jest --watch",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node bin/index"
   },
   "jest": {
     "testEnvironment": "node",
